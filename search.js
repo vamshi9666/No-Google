@@ -1,2 +1,5 @@
 console.log("running content scripts !");
-window.location = "https://duckduckgo.com/"; 
+
+ const search  = window.location.search;
+
+window.location = "https://duckduckgo.com/" + search;
